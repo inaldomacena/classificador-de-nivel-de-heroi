@@ -15,44 +15,41 @@ Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**" */
 
 
-let nomeHeroi = "homem aranha"
-let xp = 2001
+let nomeHeroi = "batman"
+let xp = 5221
+let resultado = ""
 
 
-/*if (nomeHeroi = "homem aranha") {
-        if(xp > 0){
-    console.log('verificar o nivel do heroi')
-    
-   }
-}*/
 
-switch (xp){
-    case (xp <= 1000):
-        console.log("Ferro")
-        break
-    case  (xp >= 1001) && (xp <= 2000):
-            console.log("Bronze") 
-            break
-    case (xp >= 2001) && (xp <= 5000):
-            console.log("Prata") 
-            break
-    case (xp >= 6001) && (xp <= 7000):
-            console.log("Ouro") 
-            break
-    case (xp >= 7001) &&  (xp<= 8000):
-            console.log("Platina") 
-            break
-    case (xp >= 8001) && (xp <= 9000):
-            console.log("Ascendente") 
-            break
-    case (xp >= 9001) &&  (xp<= 10000):
-            console.log("Imortal")
-            break  
-    case (xp >= 10000):
-            console.log("Radiante")
-            break 
-    default:
-        console.log("numero invalido")  
+
+    if (xp <= 1000){
+        resultado = "Ferro"
+    }  
+    else if (xp >= 1001 && xp <= 2000){
+            resultado ="Bronze"
+    }       
+    else if (xp >= 2001 && xp <= 5000){
+            resultado = "Prata"
+    }
+    else if (xp >= 5001 && xp <= 7000){ 
+            resultado = "Ouro"
+    }
+    else if (xp >= 7001 &&  xp<= 8000){
+            resultado ="Platina" 
+    }
+     else if(xp >= 8001 && xp <= 9000){
+            resultado ="Ascendente"
+     }       
+    else if (xp >= 9001 &&  xp<= 10000){
+            resultado ="Imortal"
+    }           
+    else if(xp >= 10000){
+            resultado="Radiante"
+        }else{
+        resultado = "Número invalido"
 }   
+
+
+console.log("O heroi de nome " + nomeHeroi + " está no nivel " + resultado  )
 
  
