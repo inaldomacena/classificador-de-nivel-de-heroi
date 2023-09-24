@@ -16,18 +16,18 @@ Ao final deve se exibir uma mensagem:
 
 
 let nomeHeroi = "homem aranha"
-let xp = 0
+let xp = 2001
 
 
-if (nomeHeroi = "homem aranha") {
-          if(xp > 0){
+/*if (nomeHeroi = "homem aranha") {
+        if(xp > 0){
     console.log('verificar o nivel do heroi')
     
-}
-}
+   }
+}*/
 
 switch (xp){
-    case xp <= 1000:
+    case (xp <= 1000):
         console.log("Ferro")
         break
     case  (xp >= 1001) && (xp <= 2000):
@@ -38,14 +38,19 @@ switch (xp){
             break
     case (xp >= 6001) && (xp <= 7000):
             console.log("Ouro") 
+            break
     case (xp >= 7001) &&  (xp<= 8000):
             console.log("Platina") 
+            break
     case (xp >= 8001) && (xp <= 9000):
             console.log("Ascendente") 
+            break
     case (xp >= 9001) &&  (xp<= 10000):
-            console.log("Imortal")  
+            console.log("Imortal")
+            break  
     case (xp >= 10000):
-                console.log("Radiante") 
+            console.log("Radiante")
+            break 
     default:
         console.log("numero invalido")  
 }   
