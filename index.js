@@ -47,7 +47,7 @@ let resultado = ""
     }           
     else if(xp >= 10000){
             resultado="Radiante"
-        }else{
+   }else{
         resultado = "Número invalido"
 }   
 
