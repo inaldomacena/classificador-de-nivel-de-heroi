@@ -18,7 +18,7 @@ Ao final deve se exibir uma mensagem:
 
 
 let nomeHeroi = "batman"
-let xp = 5890
+let xp = 9890
 let resultado = ""
 
 
